@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="#58c9c1"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:rowCount="6">
+
+        <Button
+            android:id="@+id/Clean"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="borrar"
+            android:text="C"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/Divide"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="division"
+            android:text="/"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/Multiplica"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="multiplicacion"
+            android:text="X"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/Borrar"
+
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="clear"
+            android:text="Borrar"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/bt7"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="bt7"
+            android:text="7"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/bt8"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="bt8"
+            android:text="8"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Nueve"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="bt9"
+            android:text="9"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Resta"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="resta"
+            android:text="-"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/bt4"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="bt4"
+            android:text="4"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/bt5"
+            android:layout_width="wrap_content"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="bt5"
+            android:text="5"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/bt6"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="bt6"
+            android:text="6"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Suma"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="suma"
+            android:text="+"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="bt1"
+            android:text="1"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="bt2"
+            android:text="2"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="bt3"
+            android:text="3"
+            android:textColor="#FAFAFA" />
+
+
+        <Button
+            android:id="@+id/Igual"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="igual"
+            android:text="="
+            android:textColor="#FF5722" />
+
+
+        <Button
+            android:id="@+id/Cero"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="bt0"
+            android:text="0"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Punto"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="btpuntp"
+            android:text="."
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/tangente"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="tan"
+            android:text="tan"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/cos"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="cos"
+            android:text="cos"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/Sin"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:onClick="sin"
+            android:text="Sin"
+            android:textColor="#FF5722" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="3"
+            android:text="Switch" />
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/caja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
