@@ -17,7 +17,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         pant=(EditText)findViewById(R.id.caja);
 
+
+
     }
+
+
     //Boton 1
     public void bt1 (View v){
         String cap  =pant.getText().toString();
@@ -151,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
             operan1=Double.parseDouble(auxi);
         }
         catch(NumberFormatException nfe){ }
+
         pant.setText("Cos("+operan1+")");
         //Operación 6 cos
         ope=6;
@@ -198,12 +203,15 @@ public class MainActivity extends AppCompatActivity {
         }
         //Tan
         else if (ope==5){
-            double rad=Math.toRadians(operan1);
-            res=(Math.tan(rad));
+
+               double rad = Math.toRadians(operan1);
+                res=(Math.tan(rad));
+
         }
         //Cos
         else if (ope==6){
-            double rad=Math.toRadians(operan1);
+
+            double rad=Math.toDegrees(operan1);
             res=(Math.cos(rad));
         }
         //Sin
